@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'courses',
+    'django.contrib',
+    'courses'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -107,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Madrid'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
