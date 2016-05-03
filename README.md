@@ -43,3 +43,16 @@ Course(title="",description="").save()
 - Create the url for courses
 - Add that url in urls.py in web
 
+
+7/// CREATE A SUPERUSER
+
+python manage.py createsuperuser
+url/admin/
+Register Course model in admin.py -> admin.site.register(Course)
+
+
+8/// TEMPLATES
+
+Create forlder in courses and web
+Add in the settings in TEMPLATES - DIR
+Change the views to return with render function
