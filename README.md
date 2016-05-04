@@ -56,3 +56,13 @@ Register Course model in admin.py -> admin.site.register(Course)
 Create forlder in courses and web
 Add in the settings in TEMPLATES - DIR
 Change the views to return with render function
+
+9/// STATIC TEMPLATES
+
+STATICFILES_DIRS is a setting for where to find static files. These files will either be served during development or will end up being collected by the collectstatic command during deployment.
+
+staticfiles_urlpatterns() is a function that returns the URL patterns for static files based on DEBUG and a few other settings. You import it from django.contrib.staticfiles.urls.
+
+{% load static from staticfiles %} - The way to import the {% static %} tag for use.
+
+{% static "<path/to/asset>" %} - How to use the {% static %} tag to properly point to a static asset.
